@@ -1,0 +1,149 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of search_state;
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$SearchState extends SearchState {
+  @override
+  final bool loading;
+  @override
+  final BuiltList<SearchItem> searchitems;
+  @override
+  final String error;
+  @override
+  final bool reachedendresult;
+
+  factory _$SearchState([void Function(SearchStateBuilder) updates]) =>
+      (new SearchStateBuilder()..update(updates)).build();
+
+  _$SearchState._(
+      {this.loading, this.searchitems, this.error, this.reachedendresult})
+      : super._() {
+    if (loading == null) {
+      throw new BuiltValueNullFieldError('SearchState', 'loading');
+    }
+    if (searchitems == null) {
+      throw new BuiltValueNullFieldError('SearchState', 'searchitems');
+    }
+    if (error == null) {
+      throw new BuiltValueNullFieldError('SearchState', 'error');
+    }
+    if (reachedendresult == null) {
+      throw new BuiltValueNullFieldError('SearchState', 'reachedendresult');
+    }
+  }
+
+  @override
+  SearchState rebuild(void Function(SearchStateBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  SearchStateBuilder toBuilder() => new SearchStateBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is SearchState &&
+        loading == other.loading &&
+        searchitems == other.searchitems &&
+        error == other.error &&
+        reachedendresult == other.reachedendresult;
+  }
+
+  @override
+  int get hashCode {
+    return $jf($jc(
+        $jc($jc($jc(0, loading.hashCode), searchitems.hashCode),
+            error.hashCode),
+        reachedendresult.hashCode));
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper('SearchState')
+          ..add('loading', loading)
+          ..add('searchitems', searchitems)
+          ..add('error', error)
+          ..add('reachedendresult', reachedendresult))
+        .toString();
+  }
+}
+
+class SearchStateBuilder implements Builder<SearchState, SearchStateBuilder> {
+  _$SearchState _$v;
+
+  bool _loading;
+  bool get loading => _$this._loading;
+  set loading(bool loading) => _$this._loading = loading;
+
+  ListBuilder<SearchItem> _searchitems;
+  ListBuilder<SearchItem> get searchitems =>
+      _$this._searchitems ??= new ListBuilder<SearchItem>();
+  set searchitems(ListBuilder<SearchItem> searchitems) =>
+      _$this._searchitems = searchitems;
+
+  String _error;
+  String get error => _$this._error;
+  set error(String error) => _$this._error = error;
+
+  bool _reachedendresult;
+  bool get reachedendresult => _$this._reachedendresult;
+  set reachedendresult(bool reachedendresult) =>
+      _$this._reachedendresult = reachedendresult;
+
+  SearchStateBuilder();
+
+  SearchStateBuilder get _$this {
+    if (_$v != null) {
+      _loading = _$v.loading;
+      _searchitems = _$v.searchitems?.toBuilder();
+      _error = _$v.error;
+      _reachedendresult = _$v.reachedendresult;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(SearchState other) {
+    if (other == null) {
+      throw new ArgumentError.notNull('other');
+    }
+    _$v = other as _$SearchState;
+  }
+
+  @override
+  void update(void Function(SearchStateBuilder) updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  _$SearchState build() {
+    _$SearchState _$result;
+    try {
+      _$result = _$v ??
+          new _$SearchState._(
+              loading: loading,
+              searchitems: searchitems.build(),
+              error: error,
+              reachedendresult: reachedendresult);
+    } catch (_) {
+      String _$failedField;
+      try {
+        _$failedField = 'searchitems';
+        searchitems.build();
+      } catch (e) {
+        throw new BuiltValueNestedFieldError(
+            'SearchState', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new

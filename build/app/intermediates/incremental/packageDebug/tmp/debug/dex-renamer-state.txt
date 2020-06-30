@@ -1,0 +1,4 @@
+#Sun Jun 28 18:05:48 EET 2020
+base.0=G\:\\Important\\youtube_search\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
